@@ -5,4 +5,5 @@ A simple site for comparing product price between different e commerce sites (WO
 1. Rohan Das 
 2. Abhishek Pathak
 
-##### Not Accepting PR's BTW.
+```Not Accepting PR's BTW.
+```
