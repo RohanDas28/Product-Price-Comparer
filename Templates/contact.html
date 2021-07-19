@@ -3,17 +3,32 @@
 {% block title %}contact Page{% endblock title %}
 
 {% block css %}
-body{
-    background-color: purple;
-}
 {% endblock css %}
 
 {% block body %}
-<h1>
-contact page
-</h1>
+<div class="container mt-4 mb-4 ">
+<form>
+<h2>Contact Us</h2>
+  <div class="form-group mb-2 mt-2">
+    <label for="exampleFormControlInput1">Your Email address</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+  </div>
+    <div class="form-group mb-2 mt-2">
+    <label for="formGroupExampleInput2">Your Name</label>
+    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Your Name">
+  </div>
+    <div class="form-group mb-2 mt-2">
+    <label for="formGroupExampleInput2">Your Phone Number</label>
+    <input type="text" class="form-control" id="formGroupExampleInput3" placeholder="YourPhoneNumber">
+  </div>
+  <div class="form-group mb-2 mt-2">
+    <label for="exampleFormControlTextarea1">Describe what you want to contact us for here</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</div>
 {% endblock body %}
 
 {% block js %}
-console.log('Hello World!');
 {% endblock js %}
