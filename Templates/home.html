@@ -7,18 +7,50 @@
 
 {% block body %}
 
- <div class="container col-xxl-8 px-4 py-5 ">
-    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-      <div class="col-10 col-sm-8 col-lg-6">
-        <img src="https://cdn.pixabay.com/photo/2018/05/04/20/01/website-3374825_960_720.jpg" class="d-block mx-lg-auto img-fluid" width="700" height="500" loading="lazy">
+<div class="container col-xxl-8 px-4 py-5 ">
+  <div class="my-3 col-md-12">
+    <div class="row mx-lg-n5">
+      <div class="col-md-10">
+        <input style="font-size:20px" class="form-control  type="search" placeholder="Search">
       </div>
-      <div class="col-lg-6 text-center">
-        <h1 class="display-5 fw-bold lh-1 mb-3">E-Commerce Price Tracker</h1>
-        <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
-        <button type="button" class="btn btn-outline-primary btn-lg px-4 align-items-center">Default</button>
+      <div class="col-md-2">
+       <a href="/results"> <button class="btn btn-outline-success  style="font-size:20px">Search</button></a>
       </div>
     </div>
   </div>
+
+  <div class="">
+    <div class="card text-center">
+      <div class="card-header">
+        Don't Know how to use this?
+      </div>
+      <div class="card-body">
+        <h5 class="card-title" style="font-family: 'Times New Roman', Times, serif; font-weight: 600;">Just Search the <u>Product</u> <b>Name</b></h5>
+        <p class="card-text" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">This is take you to the Heaven of offers</p>
+        <a href="/results" class="btn btn-primary">search</a>
+      </div>
+      <div class="card-footer text-muted">
+        Enjoy Shopping
+      </div>
+    </div>
+  </div>
+
+  <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+    <div class="col-10 col-sm-8 col-lg-6">
+      <img src="https://cdn.pixabay.com/photo/2018/05/04/20/01/website-3374825_960_720.jpg"
+        class="d-block mx-lg-auto img-fluid" width="700" height="500" loading="lazy">
+    </div>
+    <div class="col-lg-6 text-center">
+      <h1 class="display-5 fw-bold lh-1 mb-3">E-Commerce Price Tracker</h1>
+      <p class="lead">The Place where you comapre the proces of the products of the Big-Big-Big companies to get best
+        price</p>
+      <button type="button" class="btn btn-outline-primary btn-lg px-4 align-items-center">Default</button>
+    </div>
+  </div>
+<hr>
+
+</div>
+
 
 {% endblock body %}
 
