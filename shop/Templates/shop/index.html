@@ -9,7 +9,7 @@
 {% load static %}
 <div class="">
   <div class="card"
-    style="width: 100% ;background: linear-gradient(293deg,rgb(9, 196, 183),wheat) ;border-top: 6px solid purple; ">
+    style="width: 100% ;background: linear-gradient(293deg,rgb(9, 196, 183),wheat) ;border-top: 6px solid purple; border-bottom: 7px solid purple;">
     <div class="card-body " style="margin-top: 22px;">
       <h5 class="card-title" style="font-size: 22px;"><b>Do you shop online? <br></b>And what to know the real<b><span
             style="font-size: 35px;font-family: Georgia, 'Times New Roman', Times, serif;"> Difference?</span></b><br>
@@ -39,7 +39,7 @@
               the
               <u> <span style="color: purple;"> Product</span></u> <b>Name</b>
             </h5>
-            <p class="card-text" style="font-family: 'Fira Sans', sans-serif;font-weight: 400;font-size: 22px;">This is
+            <p class="card-text" style="font-family: 'Fira Sans', sans-serif;font-weight: 400;font-size: 22px;">This will
               take you
               to
               the Heaven of offers</p>
@@ -54,9 +54,63 @@
   </div>
 </div>
 
+<div class="">
+  <div class="container">
 
+    <!--Slideshow starts here -->
+    {% for product, range, nSlides in allProds %}
+    <h5 class="my-4">Flash Sale On {{product.0.category}} - Recommended Items</h5>
+    <div id="demo{{forloop.counter}}" class="carousel slide my-3" data-ride="carousel">
+      <ul class="carousel-indicators">
+        <li data-target="#demo{{forloop.counter}}" data-slide-to="0" class="active"></li>
+  
+        {% for i in range %}
+        <li data-target="#demo{{forloop.parentloop.counter}}" data-slide-to="{{i}}"></li>
+        {% endfor %}
+      </ul>
+  
+  
+      <div class="container carousel-inner no-padding">
+  
+        <div class="carousel-item active">
+  
+  
+          {% for i in product %}
+          <div class="col-xs-3 col-sm-3 col-md-3">
+            <div class="card align-items-center" style="width: 18rem;">
+              <img src='/media/{{i.image}}' class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title" id="namepr{{i.id}}">{{i.product_name}}</h5>
+                <p class="card-text">{{i.desc|slice:":56"}}...</p>
+                <span id="divpr{{i.id}}" class="divpr">
+                  <button id="pr{{i.id}}" class="btn btn-primary cart">Add To Cart</button>
+                </span>
+                <a href="/shop/products/{{i.id}}"><button id="qv{{i.id}}" class="btn btn-primary cart">Quick
+                    View</button></a>
+              </div>
+            </div>
+          </div>
+          {% if forloop.counter|divisibleby:4 and forloop.counter > 0 and not forloop.last %}
+        </div>
+        <div class="carousel-item">
+          {% endif %}
+  
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  
+    <!-- left and right controls for the slide -->
+    <a class="carousel-control-prev" href="#demo{{forloop.counter}}" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo{{forloop.counter}}" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+    {% endfor %}
+  </div>
 
-
+</div>
 
 
 
