@@ -6,7 +6,7 @@
 {% endblock css %}
 
 {% block body %}
-
+{% load static %}
 <div class="">
   <div class="card"
     style="width: 100% ;background: linear-gradient(293deg,rgb(9, 196, 183),wheat) ;border-top: 6px solid purple; ">
@@ -55,6 +55,11 @@
 </div>
 
 
+
+
+
+
+
 <div class="fotter_up container" style="margin-bottom: 222px;">
   <div class="row">
     <div class="col-sm-8">
@@ -73,33 +78,33 @@
               </div>
             </div>
           </div>
-    </div>
-    <div class="col-sm-4">
-      <div class="flex flex-col">
-        <div class="flex">
-          <ul class="flex-1 font-base font-semibold">
-            <li class="mb-1">
-              <a href="" class="text-gray-900 dark:text-white text-lg">Instagram</a>
-            </li>
-            <li class="mb-1">
-              <a href="/blog" class="text-gray-900 dark:text-white text-lg">Blog</a>
-            </li>
-            <li class="mb-1">
-              <a href="" target="_blank" class="text-gray-900 dark:text-white text-lg">Linkdin</a>
-            </li>
-            <li class="mb-1">
-              <a href="" target="_blank" class="text-gray-900 dark:text-white text-lg">Facebook</a>
-            </li>
-          </ul>
+        </div>
+        <div class="col-sm-4">
+          <div class="flex flex-col">
+            <div class="flex">
+              <ul class="flex-1 font-base font-semibold">
+                <li class="mb-1">
+                  <a href="" class="text-gray-900 dark:text-white text-lg">Instagram</a>
+                </li>
+                <li class="mb-1">
+                  <a href="/blog" class="text-gray-900 dark:text-white text-lg">Blog</a>
+                </li>
+                <li class="mb-1">
+                  <a href="" target="_blank" class="text-gray-900 dark:text-white text-lg">Linkdin</a>
+                </li>
+                <li class="mb-1">
+                  <a href="" target="_blank" class="text-gray-900 dark:text-white text-lg">Facebook</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
 
 
 
-{% endblock body %}
+    {% endblock body %}
 
-{% block js %}
-{% endblock js %}
+    {% block js %}
+    {% endblock js %}

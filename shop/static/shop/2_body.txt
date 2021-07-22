@@ -1,0 +1,41 @@
+<div class="">
+
+  <div class="container">
+    <h2>Amazon</h2>
+    <div class="card" style="width: 18rem;">
+      <img src="{% static 'shop/belt.png' %}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Product Title</h5>
+        <h5 class="card-title">Price-price</h5>
+        <p class="card-text">Product little description to be Written here..</p>
+        <a href="#" class="btn btn-primary">Amazon Like</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <h2>Flipkart</h2>
+    <div class="card" style="width: 18rem;">
+      <img src="{% static 'shop/belt.png' %}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Product Title</h5>
+        <h5 class="card-title">Price-price</h5>
+        <p class="card-text">Product little description to be Written here..</p>
+        <a href="#" class="btn btn-primary">Flipkart Like</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <h2>Ebay</h2>
+    <div class="card" style="width: 18rem;">
+      <img src="{% static 'shop/belt.png' %}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Product Title</h5>
+        <h5 class="card-title">Price-price</h5>
+        <p class="card-text">Product little description to be Written here..</p>
+        <a href="#" class="btn btn-primary">Ebay Like</a>
+      </div>
+    </div>
+  </div>
+</div>
